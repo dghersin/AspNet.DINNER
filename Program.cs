@@ -1,3 +1,5 @@
+using AspNet.DINNER.Services;
+
 namespace AspNet.DINNER
 {
     public class Program
@@ -8,6 +10,7 @@ namespace AspNet.DINNER
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<DinnerService>();
 
             var app = builder.Build();
 
