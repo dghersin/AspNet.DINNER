@@ -8,6 +8,7 @@ namespace AspNet.DINNER
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<DinnerService>();
 
             var app = builder.Build();
 
